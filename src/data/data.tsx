@@ -8,23 +8,13 @@ import {
   SparklesIcon,
 } from '@heroicons/react/outline';
 
+import DuneIcon from '../components/Icon/DuneIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroImage2 from '../images/backgrounds/data_pipeline.png';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -68,14 +58,13 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  imageSrc: heroImage2,
+  name: `Hi 👋 I'm Nazih Kalo.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a San Francisco based <strong className="text-stone-100">Data Scientist / Engineer</strong>, currently working
+        at <strong className="text-stone-100">CyberConnect</strong> helping build decentralized social tooling for the future
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
@@ -104,16 +93,23 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `From the wild world of crypto to the dynamic domain of data science, 
+  my passion for exploring the cutting edge has led me down an exciting path of discovery. 
+  I've worked across multiple layers of the data stack; as a data scientist, data engineer, product analyst and a bit of frontend development.
+  I enjoy exploring the power of AI, macro & behavioral economics, and incentive models to uncover insights that can help the companies I work with thrive. 
+  Whether I'm building data pipelines or developing machine learning models, 
+  I always keep an eye on the latest trends in the world of crypto and web3. 
+  When I'm not busy tinkering with data, I'm usually immersing myself in educational YouTube channels
+  on obscure topics or soaking up the vibrant Bay Area culture. 
+  With over half a decade of experience under my belt, I'm eager to take on new challenges and continue 
+  pushing the boundaries of what's possible with data.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'San Francisco, USA', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'French / Lebanese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Health, Macro Economics, ZKML', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of California Berkeley / UChicago', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'CyberConnect', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -130,11 +126,71 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'French',
-        level: 4,
+        level: 5,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Arabic',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Data Engineering',
+    skills: [
+      {
+        name: 'SQL',
+        level: 10,
+      },
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'Spark',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Data Science / ML',
+    skills: [
+      {
+        name: 'NLP',
+        level: 8,
+      },
+      {
+        name: 'Parametric Models',
+        level: 7,
+      },
+      {
+        name: 'Computer Vision',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Cloud / Platforms',
+    skills: [
+      {
+        name: 'AWS',
+        level: 8,
+      },
+      {
+        name: 'GCP',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 6,
+      },
+      {
+        name: 'Golang',
+        level: 4,
       },
     ],
   },
@@ -155,40 +211,6 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
 ];
 
 /**
@@ -196,70 +218,25 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
+    title: 'NFT Recommendation Engine',
+    section: "crypto",
+    description: 'A recommendation engine built using NFT trading history data & collobrative filtering',
+    url: 'https://cyberconnect.hashnode.dev/cyberconnects-nft-recommendation-engine-1',
+    image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1668488324995/jtGrzwz1d.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
   {
-    title: 'Project title 2',
+    title: 'Private peer-to-peer chat app with XMTP',
+    section: "crypto",
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
+    url: 'https://cyberconnect.hashnode.dev/integrating-xmtp-into-cyberconnect-a-guide',
+    image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1678166589286/51f71467-b14c-43e4-a16b-9888718ef48b.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
+    title: 'CyberTube',
+    section: "crypto",
+    description: 'CyberTube: A decentralized video-sharing platform built on CyberConnect using Livepeer',
+    url: 'https://cyberconnect.hashnode.dev/cybertube-a-decentralized-video-sharing-platform-built-on-cyberconnect-using-livepeer',
+    image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1679316393932/8a52ec4c-bc54-4800-95a3-c8e0634fbd23.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
 ];
 
@@ -268,40 +245,72 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2020',
+    location: 'University of Chicago',
+    title: 'MSc Data Science',
+    content: <div><p>Relevant Coursework: Advanced ML, Deep Learning, NLP, Big Data, Data Engineering</p><p>Awards: Facebook Hackathon 2019 – WebBuilder ChatBot -  1st Place Prize</p></div>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'December 2017',
+    location: 'University of California, Berkeley',
+    title: 'B.A Economics ',
+    content: <p>Certification: Certificate in Entrepreneurship & Technology | UC Berkeley, IEOR Department  </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2022 - Present',
+    location: 'CyberConnect',
+    title: 'Head of Data',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div style={{display: 'inline', float: 'left'}}>
+          <ol style={{listStyleType: 'disc'}}>
+            <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
+            <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting  history to power follow/content suggestions</li>
+            <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights,  & analytics for partners on link3.to </li>
+          </ol>
+        </div>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2020 - May 2022',
+    location: 'Scale AI',
+    title: 'Product/Data Analyst & Data Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div style={{display: 'inline', float: 'left'}}>
+      <ol style={{listStyleType: 'disc'}}>
+        <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
+        <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting  history to power follow/content suggestions</li>
+        <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights,  & analytics for partners on link3.to </li>
+      </ol>
+    </div>
+    ),
+  },
+  {
+    date: 'June 2020 - September 2020',
+    location: 'Hive AI',
+    title: 'Product Analyst',
+    content: (
+      <div style={{display: 'inline', float: 'left'}}>
+      <ol style={{listStyleType: 'disc'}}>
+        <li>Product lead for company’s new ML based text-moderation product; scope included dataset management, model training/deployment, post-training optimization, and monitoring/maintenance of SLAs</li>
+        <li>Collaborated with the ML team to develop a human-assisted/in-the-loop model auditing system to identify model deficiencies and error patterns in production data. Improved model F-1 score by 24% with minimal additional training data.</li>
+      </ol>
+    </div>
+    ),
+  },
+  {
+    date: 'January 2018 - December 2018',
+    location: 'Apple',
+    title: 'Operations Internship',
+    content: (
+      <div style={{display: 'inline', float: 'left'}}>
+      <ol style={{listStyleType: 'disc'}}>
+        <li>Built data pipelines integrating internal & vendor data to reduce spend forecasts latency from 168 to 24hrs</li>
+        <li>Managed data for $50M budget for iPhone XR dev builds and identified $1M fraudulent invoices through my analysis.</li>
+      </ol>
+    </div>
     ),
   },
 ];
@@ -313,9 +322,9 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Daniel Kahneman',
+      text: 'Working with Nazih made me rethink my two system theory of the mind. He is a true genius and a great person to work with.',
+      image: 'https://pe.tedcdn.com/images/ted/152922_254x191.jpg',
     },
     {
       name: 'Jane Doe',
@@ -340,23 +349,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'nazihkalo@gmail.com',
+      href: 'mailto:nazihkalo@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'San Francisco, USA',
+      href: 'https://www.google.com/maps/place/San+Francisco,+CA/@37.760722,-122.4957944,12.36z/data=!4m6!3m5!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155!16zL20vMGQ2bHA',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Twitter,
+      text: '@kalo_nazih',
+      href: 'https://www.twitter.com/kalo_nazih/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'nazihkalo',
+      href: 'https://github.com/nazihkalo',
     },
   ],
 };
@@ -365,9 +374,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/nazihkalo'},
+  {label: 'Dune Analyics', Icon: DuneIcon, href: 'https://dune.com/NazihKalo'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/nazih-kalo/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/kalo_nazih'},
 ];
