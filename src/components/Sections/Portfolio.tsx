@@ -1,13 +1,11 @@
-import {ExternalLinkIcon} from '@heroicons/react/outline';
-import {Button, Card, Col,Grid,Link,Row, Text} from "@nextui-org/react";
+import {Card, Col,Grid,Link,Row, Text} from "@nextui-org/react";
 import classNames from 'classnames';
-import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import {FC, memo} from 'react';
 
-import {isMobile} from '../../config';
+// import {isMobile} from '../../config';
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
-import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
+// import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
@@ -23,7 +21,8 @@ const Portfolio: FC = memo(() => {
 
                 <Grid className={classNames(
                     '',
-                  )}
+                  )} 
+                key={index}
                   xs={6}>
                   {/* <Image alt={title} 
                   // placeholder="blur" 
@@ -95,7 +94,7 @@ export default Portfolio;
 
 const PortfolioCard: FC<{item: PortfolioItem}> = memo(({item: {url, title, description,image}}) => (
   <Link href={url} target="_blank">
-  <Card  css={{w: "100%", h: "400px"}}
+  <Card  //css={{w: "100%", h: "400px"}}
   isHoverable 
   isPressable>
     <Card.Header css={{position: "absolute", zIndex: 1, top: 5}}>
@@ -113,7 +112,7 @@ const PortfolioCard: FC<{item: PortfolioItem}> = memo(({item: {url, title, descr
         alt="Card example background"
         height="100%"
         objectFit="cover"
-        src={image}
+        src={String(image)}
         width="100%"
       />
     </Card.Body>
