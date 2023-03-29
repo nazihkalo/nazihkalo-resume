@@ -152,7 +152,15 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'DBT',
+        level: 9,
+      },
+      {
         name: 'Spark',
+        level: 8,
+      },
+      {
+        name: 'Airflow/Dagster',
         level: 8,
       },
     ],
@@ -201,19 +209,36 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Databases',
+    skills: [
+      {
+        name: 'Relational (Postgres/Mysql/TimescaleDB/Snowflake/DeltaLake)',
+        level: 9,
+      },
+      {
+        name: 'Graph (Neo4j)',
+        level: 7,
+      },
+      {
+        name: 'NoSQL (MongoDB)',
+        level: 6,
+      },
+    ],
+  },
+  {
     name: 'Frontend development',
     skills: [
       {
+        name: 'GraphQL',
+        level: 8,
+      },
+      {
         name: 'React',
-        level: 9,
+        level: 7,
       },
       {
         name: 'Typescript',
         level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
       },
     ],
   },
@@ -296,21 +321,23 @@ export const education: TimelineItem[] = [
     date: 'June 2020',
     location: 'University of Chicago',
     title: 'MSc Data Science',
+    imageSrc: '/resume/uchicago-logo.webp',
     content: <div><p>Relevant Coursework: Advanced ML, Deep Learning, NLP, Big Data, Data Engineering</p><p>Awards: Facebook Hackathon 2019 – WebBuilder ChatBot -  1st Place Prize</p></div>,
   },
   {
     date: 'December 2017',
     location: 'University of California, Berkeley',
     title: 'B.A Economics ',
+    imageSrc: '/resume/ucberkeley-logo.png',
     content: <p>Certification: Certificate in Entrepreneurship & Technology | UC Berkeley, IEOR Department  </p>,
   },
 ];
-
 export const experience: TimelineItem[] = [
   {
     date: 'May 2022 - Present',
     location: 'CyberConnect',
     title: 'Head of Data',
+    imageSrc: '/resume/cc-no-text-black.png',
     content: (
       <div style={{display: 'inline', float: 'left'}}>
           <ol style={{listStyleType: 'disc'}}>
@@ -324,13 +351,15 @@ export const experience: TimelineItem[] = [
   {
     date: 'September 2020 - May 2022',
     location: 'Scale AI',
-    title: 'Product/Data Analyst & Data Engineer',
+    title: 'Product Manager -> Data Engineer',
+    imageSrc: '/resume/scale-ai-logo.png',
     content: (
       <div style={{display: 'inline', float: 'left'}}>
       <ol style={{listStyleType: 'disc'}}>
-        <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
-        <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting  history to power follow/content suggestions</li>
-        <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights,  & analytics for partners on link3.to </li>
+        <li>Built & maintained data pipelines for the company's largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites. Extracted data was parsed, categorized/normalized to fit into customers’ taxonomy.</li>
+        <li>Developed internal Payout Optimizer to dynamically adjust payout functions to hit target rates; reduced pay variance by ~50% and led to $90k savings/month</li>
+        <li>Deployed self-hosted data cataloging tool <a href='https://www.amundsen.io/' target="_blank"> <span color='blue'>(Amundsen)</span></a>, improving data discovery across the company & significantly reducing analytics team onboarding time. Extracted & linked Snowflake, dbt, BigQuery, Tableau, & Salesforce metadata.</li>
+        <li>Reduced LiDAR labeling time 34% through 1) optimizing ML pre-labels in product, 2) developing a new labeling pipeline (isolating 2D/3D labeling stages). New 2D labeling pipeline reduced computer spec requirement & increased labor pool.</li>
       </ol>
     </div>
     ),
@@ -339,6 +368,7 @@ export const experience: TimelineItem[] = [
     date: 'June 2020 - September 2020',
     location: 'Hive AI',
     title: 'Product Analyst',
+    imageSrc: '/resume/hive-ai-logo.png',
     content: (
       <div style={{display: 'inline', float: 'left'}}>
       <ol style={{listStyleType: 'disc'}}>
@@ -352,6 +382,7 @@ export const experience: TimelineItem[] = [
     date: 'January 2018 - December 2018',
     location: 'Apple',
     title: 'Operations Internship',
+    imageSrc: '/resume/Apple-Logo.png',
     content: (
       <div style={{display: 'inline', float: 'left'}}>
       <ol style={{listStyleType: 'disc'}}>
