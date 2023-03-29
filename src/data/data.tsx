@@ -325,14 +325,19 @@ export const testimonial: TestimonialSection = {
       image: 'https://pe.tedcdn.com/images/ted/152922_254x191.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Friedrich August von Hayek',
+      text: 'Freedom granted only when it is known beforehand that its effects will be beneficial is not freedom.',
+      image: 'https://contemporarythinkers.org/friedrich-hayek/wp-content/uploads/sites/17/2015/05/f-hayek-bio.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Marie Curie',
+      text: 'Be less curious about people and more curious about ideas',
+      image: 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTLqNCGhKGcOEVaHHWt51CQQvF3YkrTgHqhaXdBZbtAD1mEdQr-4Wx8PbhfO695-tlfpStk9Az1BQreDis',
+    },
+    {
+      name: 'John Tukey',
+      text: 'An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem.',
+      image: 'https://www.amphilsoc.org/sites/default/files/2019-10/Tukey%20graph%20head.jpg',
     },
   ],
 };
@@ -343,7 +348,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out with any of the mediums below. I am always open to new opportunities, collaborations or just to chat about data science, machine learning, or anything else really :)',
   items: [
     {
       type: ContactType.Email,
