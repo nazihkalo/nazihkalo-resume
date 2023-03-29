@@ -96,6 +96,7 @@ export default Portfolio;
 const PortfolioCard: FC<{item: PortfolioItem}> = memo(({item: {url, title, description,image}}) => (
   <Link href={url} target="_blank">
   <Card  
+  // eslint-disable-next-line react-memo/require-usememo
   css={{w: "100%", h: "300px"}}
   isHoverable 
   isPressable>
