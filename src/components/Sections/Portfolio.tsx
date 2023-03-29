@@ -9,6 +9,7 @@ import {PortfolioItem} from '../../data/dataDef';
 import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
+  console.log(portfolioItems)
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
@@ -94,25 +95,26 @@ export default Portfolio;
 
 const PortfolioCard: FC<{item: PortfolioItem}> = memo(({item: {url, title, description,image}}) => (
   <Link href={url} target="_blank">
-  <Card  //css={{w: "100%", h: "400px"}}
+  <Card  
+  css={{w: "100%", h: "300px"}}
   isHoverable 
   isPressable>
     <Card.Header css={{position: "absolute", zIndex: 1, top: 5}}>
       <Col>
-        <Text color="#ffffffAA" size={12} transform="uppercase" weight="bold">
+        <Text color="#373737" size={14} transform="uppercase" weight="extrabold">
           {title}
         </Text>
-        <Text color="black" h3>
+        {/* <Text color="black" h3>
           {title}
-        </Text>
+        </Text> */}
       </Col>
     </Card.Header>
     <Card.Body css={{p: 0}}>
       <Card.Image
         alt="Card example background"
         height="100%"
-        objectFit="cover"
-        src={String(image)}
+        objectFit="fill"
+        src={image}
         width="100%"
       />
     </Card.Body>

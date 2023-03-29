@@ -22,6 +22,7 @@ export interface HomepageMeta {
  */
 export interface Hero {
   imageSrc: string;
+  backgroundImageSrc: string;
   name: string;
   description: JSX.Element;
   actions: HeroActionItem[];
@@ -81,7 +82,7 @@ export interface PortfolioItem {
   description: string;
   section: string;
   url: string;
-  image: string | StaticImageData;
+  image: string;
 }
 
 /**

@@ -12,7 +12,14 @@ import DuneIcon from '../components/Icon/DuneIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage2 from '../images/backgrounds/data_pipeline.png';
+import heroImage2 from '../images/backgrounds/dataPipeline.png';
+import backgroundImage from '../images/backgrounds/mebackground.jpg'
+// import adFraudImage from  "../images/portfolio/ad-fraud.png";
+// import apple_chartImage from  "../images/portfolio/apple_chart.png";
+// import cryptoImage from  "../images/portfolio/crypto.png";
+// import drought_forecastingImage from  "../images/portfolio/drought_forecasting.png";
+// import fifaImage from  "../images/portfolio/fifa.png";
+// import resnet2unetImage from  "../images/portfolio/resnet2unet.png";
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -57,6 +64,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage2,
+  backgroundImageSrc: backgroundImage,
   name: `Hi 👋 I'm Nazih Kalo.`,
   description: (
     <>
@@ -225,7 +233,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Private peer-to-peer chat app with XMTP',
     section: "crypto",
-    description: 'Give a short description of your project here.',
+    description: 'how to combine CyberConnect’s decentralized social network with XMTP’s open protocol for private Web3 messaging.',
     url: 'https://cyberconnect.hashnode.dev/integrating-xmtp-into-cyberconnect-a-guide',
     image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1678166589286/51f71467-b14c-43e4-a16b-9888718ef48b.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
@@ -235,6 +243,48 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'CyberTube: A decentralized video-sharing platform built on CyberConnect using Livepeer',
     url: 'https://cyberconnect.hashnode.dev/cybertube-a-decentralized-video-sharing-platform-built-on-cyberconnect-using-livepeer',
     image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1679316393932/8a52ec4c-bc54-4800-95a3-c8e0634fbd23.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  },
+  {
+    title: 'Steel Defect Image Segmentation',
+    section: "crypto",
+    description: 'Detecting Defects in Steel Manufacturing Line using Computer Vision',
+    url: 'https://github.com/nazihkalo/steel_defect_detection',
+    image: "/portfolio/resnet2unet.png",
+  },
+  {
+    title: 'Apple Health Data Visualization',
+    section: "crypto",
+    description: 'Analyzing data from my Apple Health App in Python',
+    url: 'https://github.com/nazihkalo/Apple-Health-Data-Analysis',
+    image: "/portfolio/apple_chart.png",
+  },
+  {
+    title: 'Drought Forecasting',
+    section: "crypto",
+    description: 'Drought Forecasting using Time Series models in R.',
+    url: 'https://github.com/nazihkalo/Drought-Forecasting-in-R',
+    image: "/portfolio/drought_forecasting.png",
+  },
+  {
+    title: 'FIFA19 Scouting Analysis',
+    section: "crypto",
+    description: 'Data driven FIFA player scouting analysis using Parametric Models in python.',
+    url: 'https://github.com/nazihkalo/FIFA19-Scouting-Analysis',
+    image: "/portfolio/fifa.png",
+  },
+  {
+    title: 'Cryptocurrency Prediction using Social Media Indicators',
+    section: "crypto",
+    description: 'CryptoCurrency Prediction using scraped social media data and NLP in python.',
+    url: 'https://github.com/angelaaaateng/DEPA_Project',
+    image: "/portfolio/crypto.png",
+  },
+  {
+    title: 'Detecting Ad Click Fraud',
+    section: "crypto",
+    description: 'Algorithm that predicts whether a user will download an app after clicking a mobile app ad.',
+    url: 'https://github.com/markuswehr/Ad-Tracking-Fraud-Detection',
+    image: "/portfolio/ad-fraud.png",
   },
 ];
 
