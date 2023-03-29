@@ -122,6 +122,7 @@ export const ContactType = {
   Phone: 'Phone',
   Location: 'Location',
   Github: 'Github',
+  Dune: 'Dune',
   LinkedIn: 'LinkedIn',
   Facebook: 'Facebook',
   Twitter: 'Twitter',

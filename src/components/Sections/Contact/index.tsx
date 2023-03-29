@@ -4,6 +4,7 @@ import {FC, memo} from 'react';
 
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
+import DuneIcon from '../../Icon/DuneIcon';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
@@ -17,6 +18,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Phone]: {Icon: DeviceMobileIcon, srLabel: 'Phone'},
   [ContactType.Location]: {Icon: LocationMarkerIcon, srLabel: 'Location'},
   [ContactType.Github]: {Icon: GithubIcon, srLabel: 'Github'},
+  [ContactType.Dune]: {Icon: DuneIcon, srLabel: 'Dune'},
   [ContactType.LinkedIn]: {Icon: LinkedInIcon, srLabel: 'LinkedIn'},
   [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
   [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
