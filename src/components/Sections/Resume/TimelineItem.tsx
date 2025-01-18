@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import {TimelineItem} from '../../../data/dataDef';
+import {TimelineItem as TimelineItemType} from '../../../data/dataDef';
 
-const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
+const TimelineItem: FC<{item: TimelineItemType}> = memo(({item}) => {
   const {title, imageSrc, date, location, content} = item;
   return (
       <div className='flex flex-row pr-6 pl-0 gap-2 pb-3'>

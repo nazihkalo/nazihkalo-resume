@@ -1,5 +1,5 @@
 import {StaticImageData} from 'next/image';
-import {FC, SVGProps} from 'react';
+import {FC, ReactElement, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
@@ -24,7 +24,7 @@ export interface Hero {
   imageSrc: string;
   backgroundImageSrc: string;
   name: string;
-  description: JSX.Element;
+  description: ReactElement;
   actions: HeroActionItem[];
 }
 
@@ -32,7 +32,7 @@ interface HeroActionItem {
   href: string;
   text: string;
   primary?: boolean;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  Icon?: (props: SVGProps<SVGSVGElement>) => ReactElement;
 }
 
 /**
@@ -47,7 +47,7 @@ export interface About {
 export interface AboutItem {
   label: string;
   text: string;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  Icon?: (props: SVGProps<SVGSVGElement>) => ReactElement;
 }
 
 /**
@@ -56,7 +56,7 @@ export interface AboutItem {
 export interface Stat {
   title: string;
   value: number;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  Icon?: (props: SVGProps<SVGSVGElement>) => ReactElement;
 }
 
 /**
@@ -92,7 +92,7 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
-  content: JSX.Element;
+  content: ReactElement;
   imageSrc: string;
 }
 
@@ -108,6 +108,7 @@ export interface Testimonial {
   image?: string;
   name: string;
   text: string;
+  content: ReactElement;
 }
 
 /**
@@ -140,7 +141,7 @@ export interface ContactItem {
 }
 
 export interface ContactValue {
-  Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
+  Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => ReactElement);
   srLabel: string;
 }
 
@@ -149,6 +150,6 @@ export interface ContactValue {
  */
 export interface Social {
   label: string;
-  Icon: FC<IconProps>;
+  Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => ReactElement);
   href: string;
 }

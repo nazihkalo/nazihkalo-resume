@@ -334,8 +334,23 @@ export const education: TimelineItem[] = [
 ];
 export const experience: TimelineItem[] = [
   {
-    date: 'May 2022 - Present',
-    location: 'CyberConnect',
+    date: 'August 2023 - Present',
+    location: 'New York, NY',
+    title: 'Senior Data Scientist | Phantom',
+    imageSrc: '/resume/Phantom-Icon-Purple.svg',
+    content: (
+      <div style={{display: 'inline', float: 'left'}}>
+          <ol style={{listStyleType: 'disc'}}>
+            <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
+            <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting  history to power follow/content suggestions</li>
+            <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights,  & analytics for partners on link3.to </li>
+          </ol>
+        </div>
+    ),
+  },
+  {
+    date: 'May 2022 - August 2023 | CyberConnect',
+    location: 'San Francisco, CA',
     title: 'Head of Data',
     imageSrc: '/resume/cc-no-text-black.png',
     content: (
@@ -349,9 +364,9 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2020 - May 2022',
-    location: 'Scale AI',
-    title: 'Product Manager -> Data Engineer',
+    date: 'September 2020 - May 2022 | Scale AI',
+    location: 'San Francisco, CA',
+    title: 'PM & Data Engineer',
     imageSrc: '/resume/scale-ai-logo.png',
     content: (
       <div style={{display: 'inline', float: 'left'}}>
@@ -365,8 +380,8 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'June 2020 - September 2020',
-    location: 'Hive AI',
+    date: 'June 2020 - September 2020 | Hive AI',
+    location: 'San Francisco, CA',
     title: 'Product Analyst',
     imageSrc: '/resume/hive-ai-logo.png',
     content: (
@@ -379,8 +394,8 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'January 2018 - December 2018',
-    location: 'Apple',
+    date: 'January 2018 - December 2018 | Apple',
+    location: 'Cupertino, CA',
     title: 'Operations Internship',
     imageSrc: '/resume/Apple-Logo.png',
     content: (
@@ -402,23 +417,35 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Daniel Kahneman',
-      text: 'Working with Nazih made me rethink my two system theory of the mind. He is a true genius and a great person to work with.',
+      text: 'The idea that the future is unpredictable is undermined every day by the ease with which the past is explained.',
       image: 'https://pe.tedcdn.com/images/ted/152922_254x191.jpg',
+      content: (
+        <p>The idea that the future is unpredictable is undermined every day by the ease with which the past is explained.</p>
+      ),
     },
     {
       name: 'Friedrich August von Hayek',
-      text: 'Freedom granted only when it is known beforehand that its effects will be beneficial is not freedom.',
+      text: 'The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.',
       image: 'https://contemporarythinkers.org/friedrich-hayek/wp-content/uploads/sites/17/2015/05/f-hayek-bio.jpg',
+      content: (
+        <p>The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.</p>
+      ),
     },
     {
       name: 'Marie Curie',
-      text: 'Be less curious about people and more curious about ideas',
+      text: 'Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.',
       image: 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTLqNCGhKGcOEVaHHWt51CQQvF3YkrTgHqhaXdBZbtAD1mEdQr-4Wx8PbhfO695-tlfpStk9Az1BQreDis',
+      content: (
+        <p>Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.</p>
+      ),
     },
     {
       name: 'John Tukey',
-      text: 'An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem.',
+      text: 'The greatest value of a picture is when it forces us to notice what we never expected to see.',
       image: 'https://www.amphilsoc.org/sites/default/files/2019-10/Tukey%20graph%20head.jpg',
+      content: (
+        <p>The greatest value of a picture is when it forces us to notice what we never expected to see.</p>
+      ),
     },
   ],
 };
