@@ -22,7 +22,7 @@ export interface HomepageMeta {
  */
 export interface Hero {
   imageSrc: string;
-  backgroundImageSrc: string;
+  backgroundImageSrc?: string;
   name: string;
   description: ReactElement;
   actions: HeroActionItem[];
@@ -80,9 +80,9 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
-  section: string;
   url: string;
   image: string;
+  section: string;
 }
 
 /**

@@ -8,19 +8,11 @@ import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const {backgroundImageSrc, imageSrc, name, description, actions} = heroData;
+  const {imageSrc, name, description, actions} = heroData;
 
   return (
       <Section noPadding sectionId={SectionId.Hero}>
         <div className="relative flex h-screen w-screen items-center justify-start">
-        <Image
-              alt={`${name}-image`}
-              fill={true}
-              placeholder="blur"
-              priority
-              src={backgroundImageSrc}
-              // style={{objectFit: 'cover'}}
-            />
           <div className="max-w-screen-sm px-4 lg:px-0">
             <div className="flex flex-col  items-start gap-y-6 rounded-xl bg-gray-800/75 p-6 text-left shadow-lg backdrop-blur-sm">
               <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>

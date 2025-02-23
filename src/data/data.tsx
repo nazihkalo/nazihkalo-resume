@@ -13,13 +13,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage2 from '../images/backgrounds/dataPipeline.png';
-import backgroundImage from '../images/backgrounds/mebackground.jpg'
-// import adFraudImage from  "../images/portfolio/ad-fraud.png";
-// import apple_chartImage from  "../images/portfolio/apple_chart.png";
-// import cryptoImage from  "../images/portfolio/crypto.png";
-// import drought_forecastingImage from  "../images/portfolio/drought_forecasting.png";
-// import fifaImage from  "../images/portfolio/fifa.png";
-// import resnet2unetImage from  "../images/portfolio/resnet2unet.png";
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -64,13 +57,12 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage2,
-  backgroundImageSrc: backgroundImage,
   name: `Hi 👋 I'm Nazih Kalo.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a San Francisco based <strong className="text-stone-100">Data Scientist / Engineer</strong>, currently working
-        at <strong className="text-stone-100">CyberConnect</strong> helping build decentralized social tooling for the future
+        I'm a Brooklyn based <strong className="text-stone-100">Data Scientist / Engineer</strong>, currently working
+        at <strong className="text-stone-100">Phantom</strong> helping build decentralized social tooling for the future
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">FitnessSF</strong>,
@@ -250,17 +242,17 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'NFT Recommendation Engine',
-    section: "crypto",
     description: 'A recommendation engine built using NFT trading history data & collobrative filtering',
     url: 'https://cyberconnect.hashnode.dev/cyberconnects-nft-recommendation-engine-1',
     image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1668488324995/jtGrzwz1d.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    section: "crypto"
   },
   {
     title: 'Private peer-to-peer chat app with XMTP',
-    section: "crypto",
-    description: 'how to combine CyberConnect’s decentralized social network with XMTP’s open protocol for private Web3 messaging.',
+    description: "How to combine CyberConnect's decentralized social network with XMTP's open protocol for private Web3 messaging",
     url: 'https://cyberconnect.hashnode.dev/integrating-xmtp-into-cyberconnect-a-guide',
     image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1678166589286/51f71467-b14c-43e4-a16b-9888718ef48b.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    section: "crypto"
   },
   {
     title: 'CyberTube',
@@ -371,7 +363,7 @@ export const experience: TimelineItem[] = [
     content: (
       <div style={{display: 'inline', float: 'left'}}>
       <ol style={{listStyleType: 'disc'}}>
-        <li>Built & maintained data pipelines for the company's largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites. Extracted data was parsed, categorized/normalized to fit into customers’ taxonomy.</li>
+        <li>Built & maintained data pipelines for the company's largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites. Extracted data was parsed, categorized/normalized to fit into customers' taxonomy.</li>
         <li>Developed internal Payout Optimizer to dynamically adjust payout functions to hit target rates; reduced pay variance by ~50% and led to $90k savings/month</li>
         <li>Deployed self-hosted data cataloging tool <a href='https://www.amundsen.io/' target="_blank"> <span color='blue'>(Amundsen)</span></a>, improving data discovery across the company & significantly reducing analytics team onboarding time. Extracted & linked Snowflake, dbt, BigQuery, Tableau, & Salesforce metadata.</li>
         <li>Reduced LiDAR labeling time 34% through 1) optimizing ML pre-labels in product, 2) developing a new labeling pipeline (isolating 2D/3D labeling stages). New 2D labeling pipeline reduced computer spec requirement & increased labor pool.</li>
@@ -387,7 +379,7 @@ export const experience: TimelineItem[] = [
     content: (
       <div style={{display: 'inline', float: 'left'}}>
       <ol style={{listStyleType: 'disc'}}>
-        <li>Product lead for company’s new ML based text-moderation product; scope included dataset management, model training/deployment, post-training optimization, and monitoring/maintenance of SLAs</li>
+        <li>Product lead for company's new ML based text-moderation product; scope included dataset management, model training/deployment, post-training optimization, and monitoring/maintenance of SLAs</li>
         <li>Collaborated with the ML team to develop a human-assisted/in-the-loop model auditing system to identify model deficiencies and error patterns in production data. Improved model F-1 score by 24% with minimal additional training data.</li>
       </ol>
     </div>
