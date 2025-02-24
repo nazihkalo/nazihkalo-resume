@@ -1,11 +1,3 @@
-import {
-  ClevertechLogo,
-  ConsultlyLogo,
-  JojoMobileLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -18,7 +10,7 @@ export const RESUME_DATA = {
     <>
       From the wild world of crypto to the dynamic domain of data science, 
       my passion for exploring the cutting edge has led me down an exciting path of discovery. 
-      I've worked across multiple layers of the data stack; as a data scientist, data engineer, product analyst and a bit of frontend development.
+      I&apos;ve worked across multiple layers of the data stack; as a data scientist, data engineer, product analyst and a bit of frontend development.
       I enjoy exploring the power of AI, macro & behavioral economics, and incentive models to uncover insights that can help the companies I work with thrive.
     </>
   ),
@@ -106,7 +98,7 @@ export const RESUME_DATA = {
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Built & maintained data pipelines for the company's largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites</li>
+            <li>Built & maintained data pipelines for the company&apos;s largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites</li>
             <li>Developed internal Payout Optimizer to dynamically adjust payout functions to hit target rates; reduced pay variance by ~50% and led to $90k savings/month</li>
             <li>Deployed self-hosted data cataloging tool (Amundsen), improving data discovery across the company</li>
             <li>Reduced LiDAR labeling time 34% through optimizing ML pre-labels and developing a new labeling pipeline</li>
@@ -124,7 +116,7 @@ export const RESUME_DATA = {
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Product lead for company's new ML based text-moderation product</li>
+            <li>Product lead for company&apos;s new ML based text-moderation product</li>
             <li>Collaborated with the ML team to develop a human-assisted model auditing system to identify model deficiencies</li>
           </ul>
         </>
