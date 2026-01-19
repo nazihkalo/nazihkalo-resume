@@ -8,10 +8,8 @@ export const RESUME_DATA = {
   about: "Data Scientist / Engineer focused on building high-quality data products and ML systems.",
   summary: (
     <>
-      From the wild world of crypto to the dynamic domain of data science, 
-      my passion for exploring the cutting edge has led me down an exciting path of discovery. 
-      I&apos;ve worked across multiple layers of the data stack; as a data scientist, data engineer, product analyst and a bit of frontend development.
-      I enjoy exploring the power of AI, macro & behavioral economics, and incentive models to uncover insights that can help the companies I work with thrive.
+      8+ years building analytics & ML platforms from 0→1. Scaled experimentation, real-time analytics, and recommender systems powering millions of users.
+      Deeply interested in reinforcement learning, crypto, and decentralized technologies—always learning something new to stay sharp.
     </>
   ),
   avatarUrl: "/me.jpeg",
@@ -62,16 +60,16 @@ export const RESUME_DATA = {
     {
       company: "Phantom",
       link: "https://phantom.app",
-      badges: ["Remote", "Data Science", "ML", "Python", "dbt"],
-      title: "Senior Data Scientist",
-      start: "2023",
+      badges: ["SF / NYC", "Data Science", "ML", "Python", "dbt"],
+      title: "Staff Data Scientist",
+      start: "Aug 2023",
       end: "Present",
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
-            <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting history to power follow/content suggestions</li>
-            <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights, & analytics for partners</li>
+            <li>Established company-wide data quality KPIs (coverage, freshness, accuracy, drift) across user-generated content and behavioral signals; implemented automated validation and anomaly detection with dbt + Python</li>
+            <li>Built near-real-time analytics pipelines (ClickHouse + Snowflake) reducing data latency from minutes → seconds, enabling faster feedback loops for ML-driven rankings</li>
+            <li>Scaled experimentation from 0 → 100s of A/Bs per quarter, introducing guardrails, selective holdouts, and post-launch monitoring tied to data quality changes</li>
           </ul>
         </>
       ),
@@ -79,16 +77,18 @@ export const RESUME_DATA = {
     {
       company: "CyberConnect",
       link: "https://cyberconnect.me",
-      badges: ["Remote", "Data Engineering", "ML", "Python", "Spark"],
+      badges: ["San Francisco", "Data Engineering", "ML", "Python", "Spark"],
       title: "Head of Data",
-      start: "2022",
-      end: "2023",
+      start: "May 2022",
+      end: "Aug 2023",
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Built all data pipelines, including indexing & decoding on/off-chain data from multiple chains using Airflow/Spark/dbt</li>
-            <li>Developed nft & wallet recommendation engines, leveraging wallet trading/minting history to power follow/content suggestions</li>
-            <li>Maintained all internal/external dashboards (incl. dune, internal), retention/growth insights, & analytics</li>
+            <li>Built data platform 0 → 1 using Airflow, Databricks, & dbt; dataset validation and monitoring for ML consumption</li>
+            <li>Shipped recommendation system to 100k+ users owning offline metrics (precision/recall/coverage) & experimentation</li>
+            <li>Designed dataset audits and bias analyses across chains, regions, and user cohorts to ensure fair exposure and robust model behavior</li>
+            <li>Implemented embedding-based deduplication and similarity search (Pinecone) to improve training data diversity and reduce noise</li>
+            <li>Translated ambiguous product goals into measurable data quality and ML performance roadmaps</li>
           </ul>
         </>
       ),
@@ -97,16 +97,17 @@ export const RESUME_DATA = {
       company: "Scale AI",
       link: "https://scale.com",
       badges: ["San Francisco", "Data Engineering", "Product", "Python"],
-      title: "Product Manager → Data Engineer",
-      start: "2020",
-      end: "2022",
+      title: "Product/Data Analyst & Data Engineer",
+      start: "Sep 2020",
+      end: "May 2022",
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Built & maintained data pipelines for the company&apos;s largest data extraction/scraping project, scraping 12M+ products from ~5000 ecommerce sites</li>
-            <li>Developed internal Payout Optimizer to dynamically adjust payout functions to hit target rates; reduced pay variance by ~50% and led to $90k savings/month</li>
-            <li>Deployed self-hosted data cataloging tool (Amundsen), improving data discovery across the company</li>
-            <li>Reduced LiDAR labeling time 34% through optimizing ML pre-labels and developing a new labeling pipeline</li>
+            <li>Owned pipelines for large-scale data extraction and labeling programs supporting Fortune-500 ML systems</li>
+            <li>Led ground-truth quality initiatives: error analysis, annotator agreement metrics, guideline revisions, and automated QA checks</li>
+            <li>Reduced LiDAR and video labeling time by 34% by improving ML pre-labels, redesigning pipelines, and enabling lower-spec devices</li>
+            <li>Ran cost-quality tradeoff experiments on labeling workflows, reducing variance ~50% while maintaining accuracy</li>
+            <li>Built monitoring for label latency, coverage gaps, and drift, enabling faster iteration with ML teams</li>
           </ul>
         </>
       ),
@@ -116,13 +117,14 @@ export const RESUME_DATA = {
       link: "https://thehive.ai",
       badges: ["San Francisco", "ML", "Product"],
       title: "Product Analyst",
-      start: "2020",
-      end: "2020",
+      start: "Jun 2020",
+      end: "Sep 2020",
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Product lead for company&apos;s new ML based text-moderation product</li>
-            <li>Collaborated with the ML team to develop a human-assisted model auditing system to identify model deficiencies</li>
+            <li>Owned dataset → training → deployment lifecycle for ML moderation models</li>
+            <li>Increased model F1 by 24% via targeted error mining, label audits, and human-in-the-loop reviews</li>
+            <li>Defined production SLAs and post-launch monitoring for model and data quality</li>
           </ul>
         </>
       ),
