@@ -68,7 +68,7 @@ export const RESUME_DATA = {
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Led 0→1 build of a multi-agent "Data Science Agent" (Google ADK) that plans, executes, and cross-validates analytical reasoning across Snowflake, Amplitude, Sigma, and codebase sources; implemented automated QA loops, source bake-offs, and cost guardrails to improve answer reliability and reduce hallucinations</li>
+            <li>Led 0→1 build of a multi-agent &ldquo;Data Science Agent&rdquo; (Google ADK) that plans, executes, and cross-validates analytical reasoning across Snowflake, Amplitude, Sigma, and codebase sources; implemented automated QA loops, source bake-offs, and cost guardrails to improve answer reliability and reduce hallucinations</li>
             <li>Built near-real-time analytics pipelines (ClickHouse + Snowflake) powering Trending Tokens and Top Apps lists for 15M+ MAU, cutting data latency from mins→seconds and enabling 8 product teams to ship without data bottlenecks</li>
             <li>Built experimentation platform from 0→100s of A/Bs per quarter; designed guardrails, selective holdouts, and bias-mitigation frameworks to ensure causal validity and prevent metric contamination (42% win rate)</li>
             <li>Data Lead: mentored 7 DS/DEs, defined platform roadmap, SLAs, and data quality bars (tests/lineage/CDC)</li>

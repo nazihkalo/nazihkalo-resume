@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
@@ -76,9 +77,11 @@ function CompanyLink({ company, link, logo }: CompanyLinkProps) {
       aria-label={`${company} company website`}
     >
       {logo && (
-        <img
+        <Image
           src={logo}
           alt={`${company} logo`}
+          width={16}
+          height={16}
           className="size-4 rounded-sm print:hidden"
         />
       )}
