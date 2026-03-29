@@ -58,7 +58,7 @@ function getCommandMenuLinks() {
 export default function ResumePage() {
   return (
     <main
-      className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
+      className="container relative z-10 scroll-my-12 overflow-auto p-4 print:mx-auto print:p-11 md:p-16 lg:mr-[40vw] lg:ml-[2%]"
       id="main-content"
     >
       <div className="sr-only">
@@ -66,7 +66,7 @@ export default function ResumePage() {
       </div>
 
       <section
-        className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+        className="w-full max-w-3xl space-y-8 bg-white print:mx-auto print:max-w-2xl print:space-y-4"
         aria-label="Resume Content"
       >
         <Header />

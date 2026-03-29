@@ -60,6 +60,7 @@ export const RESUME_DATA = {
     {
       company: "Phantom",
       link: "https://phantom.app",
+      logo: "/logos/Phantom-Icon_Transparent_Purple.svg",
       badges: ["SF / NYC", "Data Science", "ML", "Python", "dbt"],
       title: "Staff Data Scientist",
       start: "Aug 2023",
@@ -67,9 +68,11 @@ export const RESUME_DATA = {
       description: (
         <>
           <ul className="list-inside list-disc">
-            <li>Established company-wide data quality KPIs (coverage, freshness, accuracy, drift) across user-generated content and behavioral signals; implemented automated validation and anomaly detection with dbt + Python</li>
-            <li>Built near-real-time analytics pipelines (ClickHouse + Snowflake) reducing data latency from minutes → seconds, enabling faster feedback loops for ML-driven rankings</li>
-            <li>Scaled experimentation from 0 → 100s of A/Bs per quarter, introducing guardrails, selective holdouts, and post-launch monitoring tied to data quality changes</li>
+            <li>Led 0→1 build of a multi-agent "Data Science Agent" (Google ADK) that plans, executes, and cross-validates analytical reasoning across Snowflake, Amplitude, Sigma, and codebase sources; implemented automated QA loops, source bake-offs, and cost guardrails to improve answer reliability and reduce hallucinations</li>
+            <li>Built near-real-time analytics pipelines (ClickHouse + Snowflake) powering Trending Tokens and Top Apps lists for 15M+ MAU, cutting data latency from mins→seconds and enabling 8 product teams to ship without data bottlenecks</li>
+            <li>Built experimentation platform from 0→100s of A/Bs per quarter; designed guardrails, selective holdouts, and bias-mitigation frameworks to ensure causal validity and prevent metric contamination (42% win rate)</li>
+            <li>Data Lead: mentored 7 DS/DEs, defined platform roadmap, SLAs, and data quality bars (tests/lineage/CDC)</li>
+            <li>Owned Series C ($150M) metrics/diligence: built market-share analytics across DEX volume, TVL, and user flows vs dozens of competitors; informed investor narrative and supported valuation by quantifying share + growth cohorts</li>
           </ul>
         </>
       ),
@@ -77,6 +80,7 @@ export const RESUME_DATA = {
     {
       company: "CyberConnect",
       link: "https://cyberconnect.me",
+      logo: "/logos/cyber_logo.svg",
       badges: ["San Francisco", "Data Engineering", "ML", "Python", "Spark"],
       title: "Head of Data",
       start: "May 2022",
@@ -86,7 +90,6 @@ export const RESUME_DATA = {
           <ul className="list-inside list-disc">
             <li>Built data platform 0 → 1 using Airflow, Databricks, & dbt; dataset validation and monitoring for ML consumption</li>
             <li>Shipped recommendation system to 100k+ users owning offline metrics (precision/recall/coverage) & experimentation</li>
-            <li>Designed dataset audits and bias analyses across chains, regions, and user cohorts to ensure fair exposure and robust model behavior</li>
             <li>Implemented embedding-based deduplication and similarity search (Pinecone) to improve training data diversity and reduce noise</li>
             <li>Translated ambiguous product goals into measurable data quality and ML performance roadmaps</li>
           </ul>
@@ -96,6 +99,7 @@ export const RESUME_DATA = {
     {
       company: "Scale AI",
       link: "https://scale.com",
+      logo: "/logos/scaleai.png",
       badges: ["San Francisco", "Data Engineering", "Product", "Python"],
       title: "Product/Data Analyst & Data Engineer",
       start: "Sep 2020",
@@ -115,6 +119,7 @@ export const RESUME_DATA = {
     {
       company: "Hive AI",
       link: "https://thehive.ai",
+      logo: "/logos/hiveai.jpeg",
       badges: ["San Francisco", "ML", "Product"],
       title: "Product Analyst",
       start: "Jun 2020",
@@ -132,6 +137,7 @@ export const RESUME_DATA = {
     {
       company: "Apple",
       link: "https://apple.com",
+      logo: "/logos/apple.svg",
       badges: ["Cupertino", "Data Analysis", "Operations"],
       title: "Operations Intern",
       start: "2018",

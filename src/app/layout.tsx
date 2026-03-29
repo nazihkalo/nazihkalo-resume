@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import React from "react";
+import { SimulationPanel } from "@/components/SimulationPanel";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <body>
+        <SimulationPanel />
+        {children}
+      </body>
       <Analytics />
     </html>
   );

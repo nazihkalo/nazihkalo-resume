@@ -60,20 +60,28 @@ function WorkPeriod({ start, end }: WorkPeriodProps) {
 interface CompanyLinkProps {
   company: WorkExperience["company"];
   link: WorkExperience["link"];
+  logo?: WorkExperience["logo"];
 }
 
 /**
- * Renders company name with optional link
+ * Renders company name with optional logo and link
  */
-function CompanyLink({ company, link }: CompanyLinkProps) {
+function CompanyLink({ company, link, logo }: CompanyLinkProps) {
   return (
     <a
-      className="hover:underline"
+      className="inline-flex items-center gap-x-1.5 hover:underline"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${company} company website`}
     >
+      {logo && (
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          className="size-4 rounded-sm print:hidden"
+        />
+      )}
       {company}
     </a>
   );
@@ -88,14 +96,14 @@ interface WorkExperienceItemProps {
  * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+  const { company, link, logo, badges, title, start, end, description } = work;
 
   return (
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
-            <CompanyLink company={company} link={link} />
+            <CompanyLink company={company} link={link} logo={logo} />
             <BadgeList
               className="hidden gap-x-1 sm:inline-flex"
               badges={badges}

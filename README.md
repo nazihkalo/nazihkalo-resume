@@ -1,67 +1,80 @@
-![cv](https://github.com/BartoszJarocki/cv/assets/1017620/79bdb9fc-0b20-4d2c-aafe-0526ad4a71d2)
+# Nazih Kalo — Interactive Resume
 
-# Minimalist CV [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
+A personal resume website with interactive statistical simulations running alongside the CV content.
 
-Simple web app that renders minimalist CV with print-friendly layout.
+Built with Next.js 14, React, TypeScript, Tailwind CSS, shadcn/ui, and Matter.js. Deployed on Vercel.
 
-Built with Next.js and shadcn/ui, deployed on Vercel.
+## Layout
 
-# Features
+The page is split into two panels on desktop:
 
-- Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/ui, TailwindCss
-- Auto generated Layout
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- **Left** — Resume content: work experience with company logos, education, skills, and projects
+- **Right** — Scrollable simulation panel with three interactive statistical demonstrations
 
-# Getting Started Locally
+On smaller screens the simulations are hidden and the resume displays in a standard single-column layout. Print view renders a clean, centered CV with no simulations.
 
-1. Clone this repository to your local machine:
+## Statistical Simulations
 
-   ```bash
-   git clone https://github.com/BartoszJarocki/cv.git
-   ```
+The right panel contains three interactive simulations that generate real observed data and compare it against theoretical distributions:
 
-2. Move to the cloned directory
+### Galton Board (Binomial → Normal)
 
-   ```bash
-   cd cv
-   ```
+A physics-based Galton board built with Matter.js. Balls drop through a triangular peg lattice, land in bins, and build up a histogram that converges to a normal distribution via the Central Limit Theorem. Live stats show observed vs theoretical mean and standard deviation.
 
-3. Install dependencies:
+**Controls:** peg rows, gravity, spawn speed, add balls, reset.
 
-   ```bash
-   yarn install
-   ```
+<!-- TODO: screenshot -->
+![Galton Board](./docs/galton-board.png)
 
-4. Start the local Server:
+### Poisson Traffic
 
-   ```bash
-   yarn dev
-   ```
+Cars spawn on a road according to a Poisson process. Arrivals are counted in fixed time windows and displayed as a histogram with the theoretical Poisson PMF overlaid as a connected dot plot.
 
-5. Open the [Config file](./src/data/resume-data.tsx) and make changes
+**Controls:** lambda (arrival rate), observation window duration, reset.
 
-# Run with Docker
+<!-- TODO: screenshot -->
+![Poisson Traffic](./docs/poisson-traffic.png)
 
-Build the container
+### Exponential Waiting Times
 
+Generates exponentially distributed inter-arrival times and plots them as a histogram with the theoretical exponential PDF curve overlaid. Demonstrates the "most waits are short, long waits are rare" property.
+
+**Controls:** lambda (rate parameter), reset.
+
+<!-- TODO: screenshot -->
+![Exponential Waiting Times](./docs/exponential-waiting.png)
+
+---
+
+All simulations cap at **5,000 observations** to prevent client-side performance issues. Parameters are adjustable in real time via sliders; changing a parameter resets and restarts the simulation.
+
+## Resume Data
+
+All resume content lives in a single config file: [`src/data/resume-data.tsx`](./src/data/resume-data.tsx). Company logos are stored in [`public/logos/`](./public/logos/).
+
+## Getting Started
+
+```bash
+# Install dependencies
+yarn install
+
+# Start dev server
+yarn dev
+
+# Production build
+yarn build && yarn start
 ```
-docker compose build
-```
 
-Run the container
+## Tech Stack
 
-```
-docker compose up -d
-```
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 |
+| UI | React 18, TypeScript, Tailwind CSS, shadcn/ui |
+| Physics | Matter.js |
+| Icons | Custom SVG + Lucide React |
+| Deployment | Vercel |
 
-Stop the Container
-
-```
-docker compose down 
-```
-
-# License
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
