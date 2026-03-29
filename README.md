@@ -23,8 +23,8 @@ A physics-based Galton board built with Matter.js. Balls drop through a triangul
 
 **Controls:** peg rows, gravity, spawn speed, add balls, reset.
 
-<!-- TODO: screenshot -->
-![Galton Board](./docs/galton-board.png)
+<img width="546" height="587" alt="Screenshot 2026-03-29 at 12 13 17 PM" src="https://github.com/user-attachments/assets/b800fec1-4959-435c-abba-3991b53a47af" />
+
 
 ### Poisson Traffic
 
@@ -32,8 +32,8 @@ Cars spawn on a road according to a Poisson process. Arrivals are counted in fix
 
 **Controls:** lambda (arrival rate), observation window duration, reset.
 
-<!-- TODO: screenshot -->
-![Poisson Traffic](./docs/poisson-traffic.png)
+<img width="555" height="430" alt="Screenshot 2026-03-29 at 12 13 24 PM" src="https://github.com/user-attachments/assets/5f765283-227a-483e-8ce9-6397ca785b51" />
+
 
 ### Exponential Waiting Times
 
@@ -41,8 +41,7 @@ Generates exponentially distributed inter-arrival times and plots them as a hist
 
 **Controls:** lambda (rate parameter), reset.
 
-<!-- TODO: screenshot -->
-![Exponential Waiting Times](./docs/exponential-waiting.png)
+<img width="552" height="370" alt="Screenshot 2026-03-29 at 12 13 34 PM" src="https://github.com/user-attachments/assets/35e422bc-019b-4d01-9e3b-8b2f92d61157" />
 
 ---
 
